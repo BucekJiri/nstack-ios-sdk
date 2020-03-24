@@ -12,7 +12,7 @@ import AppKit
 #else
 import UIKit
 #endif
-import LocalizationManager
+import NLocalizationManager
 
 struct DataModel<T: Codable>: WrapperModelType {
     let model: T

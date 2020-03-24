@@ -10,7 +10,7 @@ import Foundation
 #if os(iOS)
 import UIKit
 #endif
-import LocalizationManager
+import NLocalizationManager
 
 public class GeographyManager {
 

@@ -12,7 +12,7 @@ import AppKit
 #else
 import UIKit
 #endif
-import LocalizationManager
+import NLocalizationManager
 
 public struct UpdateOptions: OptionSet {
     public let rawValue: Int

@@ -14,7 +14,7 @@ import WatchKit
 #elseif os(macOS)
 import AppKit
 #endif
-import LocalizationManager
+import NLocalizationManager
 
 #if os(iOS) || os(tvOS)
 public typealias NStackLocalizableView = UIView

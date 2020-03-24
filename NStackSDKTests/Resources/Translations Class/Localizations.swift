@@ -24,7 +24,7 @@
 // ----------------------------------------------------------------------
 
 import Foundation
-import LocalizationManager
+import NLocalizationManager
 
 public final class Translations: LocalizableModel {
     public var defaultSection = DefaultSection()

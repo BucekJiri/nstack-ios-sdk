@@ -12,7 +12,7 @@ import AppKit
 #else
 import UIKit
 #endif
-import LocalizationManager
+import NLocalizationManager
 
 struct AppOpenData: Codable {
     let count: Int?

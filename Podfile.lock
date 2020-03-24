@@ -1,0 +1,22 @@
+PODS:
+  - NLocalizationManager (3.1.1)
+
+DEPENDENCIES:
+  - "NLocalizationManager (from `git@github.com:nodes-ios/TranslationManager.git`, branch `feature/nlocalization-manager-rename`)"
+
+EXTERNAL SOURCES:
+  NLocalizationManager:
+    :branch: feature/nlocalization-manager-rename
+    :git: "git@github.com:nodes-ios/TranslationManager.git"
+
+CHECKOUT OPTIONS:
+  NLocalizationManager:
+    :commit: 3cf830d793d1613f7fce46099f6d8139f586a147
+    :git: "git@github.com:nodes-ios/TranslationManager.git"
+
+SPEC CHECKSUMS:
+  NLocalizationManager: 9da0fc1beeec4906d48ef4f010082ac30e1b2dff
+
+PODFILE CHECKSUM: 193e6e3839404005ab0db8416445f3512507110a
+
+COCOAPODS: 1.9.1

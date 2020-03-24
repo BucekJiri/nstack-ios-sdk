@@ -16,13 +16,14 @@ Pod::Spec.new do |spec|
 
   spec.swift_version = '5.0'
   spec.ios.deployment_target = "10.3"
-  spec.osx.deployment_target = "10.13"
-  spec.watchos.deployment_target = "3.0"
-  spec.tvos.deployment_target = "10.2"
+
+  # FIXME: Enable in the future
+  #spec.osx.deployment_target = "10.13"
+  #spec.watchos.deployment_target = "3.0"
+  #spec.tvos.deployment_target = "10.2"
 
   spec.source       = { :git => "https://github.com/nstack-io/nstack-ios-sdk.git", :tag => "#{spec.version}" }
-  spec.source_files  = "NStackSDK"
-  #spec.framework  = "LocalizationManager"
+  spec.source_files  = "NStackSDK/**/*.swift"
   spec.dependency "NLocalizationManager", "~> 3.1.1"
 
 end

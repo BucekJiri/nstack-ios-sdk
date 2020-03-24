@@ -14,7 +14,7 @@ import WatchKit
 #elseif os(macOS)
 import AppKit
 #endif
-import LocalizationManager
+import NLocalizationManager
 
 public typealias Result<T> = Swift.Result<T, Error>
 
