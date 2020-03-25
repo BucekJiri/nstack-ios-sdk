@@ -7,9 +7,13 @@ let package = Package(
     products: [
         .library(name: "NStackSDK", targets: ["NStackSDK"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/nodes-ios/TranslationManager.git", from: "feature/spm-support"),
+    ],
     targets: [
         .target(
-            name: "NStackSDK"
+            name: "NStackSDK",
+            path: "NStackSDK"
         )
     ]
 )
