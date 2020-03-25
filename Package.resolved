@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LocalizationManager",
+        "repositoryURL": "https://github.com/nodes-ios/TranslationManager.git",
+        "state": {
+          "branch": "feature/spm-support",
+          "revision": "5d23555750772bbc996c5cea286b79e9a91f3686",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
