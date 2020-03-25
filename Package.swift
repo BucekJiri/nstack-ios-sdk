@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "NStackSDK", targets: ["NStackSDK"])
     ],
     dependencies: [
-        .package(url: "https://github.com/nodes-ios/TranslationManager.git", from: "feature/spm-support"),
+        .package(url: "https://github.com/nodes-ios/TranslationManager.git", from: "feature/spm-support")
     ],
     targets: [
         .target(
