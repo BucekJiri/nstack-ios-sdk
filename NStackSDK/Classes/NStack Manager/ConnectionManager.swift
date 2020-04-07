@@ -6,12 +6,13 @@
 //  Copyright © 2015 Nodes. All rights reserved.
 //
 
-import Foundation
+
 #if os(macOS)
 import AppKit
 #else
 import UIKit
 #endif
+import Foundation
 import LocalizationManager
 
 struct DataModel<T: Codable>: WrapperModelType {
@@ -327,10 +328,30 @@ extension ConnectionManager {
 // MARK: - FeedbackRepository
 extension ConnectionManager {
     private func getPlatform() -> String {
+        #if os(iOS) || os(tvOS)
         switch UIDevice.current.systemName.lowercased() {
         case "ios": return "ios"
         default: return "unknown"
         }
+        #elseif os(macOS)
+        return "MacOS"
+        #endif
+    }
+    
+    private func getOSVersion() -> String {
+        #if os(iOS) || os(tvOS)
+        return UIDevice.current.systemVersion
+        #elseif os(macOS)
+        return ProcessInfo.processInfo.operatingSystemVersionString
+        #endif
+    }
+    
+    private func getDevice() -> String {
+        #if os(iOS) || os(tvOS)
+        return UIDevice.current.modelType.rawValue
+        #elseif os(macOS)
+        return Host.current().name ?? "unknown"
+        #endif
     }
 
     func provideFeedback(_ feedback: Feedback, completion: @escaping Completion<Void>) {
@@ -344,8 +365,8 @@ extension ConnectionManager {
         let data = MultipartBuilder(boundary: boundary)
             .append(name: "type", value: feedback.type.rawValue)
             .append(name: "platform", value: getPlatform())
-            .append(name: "os", value: UIDevice.current.systemVersion)
-            .append(name: "device", value: UIDevice.current.modelType.rawValue)
+            .append(name: "os", value: getOSVersion())
+            .append(name: "device", value: getDevice())
             .append(name: "app_version", value: feedback.appVersion)
             .append(name: "name", value: feedback.name)
             .append(name: "email", value: feedback.email)

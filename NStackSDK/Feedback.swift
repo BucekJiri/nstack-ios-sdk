@@ -6,7 +6,10 @@
 //  Copyright © 2019 Nodes ApS. All rights reserved.
 //
 
+#if os(iOS) || os(tvOS)
 import UIKit
+#endif
+import Foundation
 
 public enum FeedbackType: String {
     case feedback, bug

@@ -6,7 +6,11 @@
 //  Copyright © 2019 Nodes ApS. All rights reserved.
 //
 
+#if os(iOS) || os(tvOS)
 import UIKit
+#elseif os(macOS)
+import AppKit
+#endif
 
 class MultipartBuilder {
     struct Part: Hashable {
@@ -79,3 +83,4 @@ class MultipartBuilder {
         return data
     }
 }
+
