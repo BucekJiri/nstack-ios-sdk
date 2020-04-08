@@ -379,7 +379,6 @@
 		A83A140822F2CB5C002A7682 /* SectionKeyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionKeyHelper.swift; sourceTree = "<group>"; };
 		A864BBEB22F31AD200CC2BFF /* LocalizationItemIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationItemIdentifier.swift; sourceTree = "<group>"; };
 		A8ECFA2E22F44E2D009D2175 /* ProposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalViewController.swift; sourceTree = "<group>"; };
-		B4369B1B242A19DF00156B68 /* NStackSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NStackSDK.podspec; sourceTree = "<group>"; };
 		B4369B1C242A1A8800156B68 /* LocalizationManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalizationManager.framework; path = Carthage/Build/tvOS/LocalizationManager.framework; sourceTree = "<group>"; };
 		C0D852CD215A2C390090B7C5 /* Codable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Dictionary.swift"; sourceTree = "<group>"; };
 		C0D852D7215A373F0090B7C5 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
@@ -632,7 +631,6 @@
 		30A3D83D1B9DB94100C2D15C = {
 			isa = PBXGroup;
 			children = (
-				B4369B1B242A19DF00156B68 /* NStackSDK.podspec */,
 				30A3D8491B9DB94100C2D15C /* NStackSDK */,
 				30A3D8551B9DB94100C2D15C /* NStackSDK Tests */,
 				304C42851BA074CB00AE3D6F /* Frameworks */,
@@ -1684,7 +1682,7 @@
 				PRODUCT_NAME = NStackSDK;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1717,7 +1715,7 @@
 				PRODUCT_NAME = NStackSDK;
 				SKIP_INSTALL = NO;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};

@@ -13,6 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "NStackSDK",
+            dependencies: ["LocalizationManager"],
             path: "NStackSDK"
         )
     ]
